@@ -16,7 +16,7 @@ var generateFiles = function() {
 
   sqlite.connect('./ghost.db');
 
-  var posts = sqlite.run('SELECT p.id, p.title, p.markdown, p.slug, p.status, p.published_at FROM \'posts\' p');
+  var posts = sqlite.run('SELECT p.id, p.title, p.markdown, p.slug, p.status, p.published_at FROM \'posts\' p WHERE p.page = 0');
 
   posts.forEach(function(post){
     var fileName = `${destination}/${post.slug}.md`;
