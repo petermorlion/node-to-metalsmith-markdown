@@ -2,7 +2,7 @@ var sqlite = require('sqlite-sync');
 var fs = require('fs');
 var rimraf = require('rimraf');
 
-var destination = './build';
+var destination = './dest';
 
 var clearDestination = function(callback) {
   rimraf(destination, {}, callback);
