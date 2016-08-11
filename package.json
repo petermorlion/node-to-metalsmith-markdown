@@ -1,0 +1,16 @@
+{
+  "name": "ghost-to-metalsmith-markdown",
+  "version": "1.0.0",
+  "description": "A script to export the posts in a Ghost Blog database file to markdown files, ready to be used with Metalsmith.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Peter Morlion",
+  "license": "MIT",
+  "devDependencies": {},
+  "dependencies": {
+    "rimraf": "^2.5.4",
+    "sqlite-sync": "^0.3.5"
+  }
+}
