@@ -4,9 +4,9 @@ A node script to export the posts in a Ghost Blog database file to markdown file
 ## Usage
 
  - Install dependencies by running `npm install`
- - Download your ghost database and put it in the root directory of this node script. Name it ghost.db.
+ - Download your ghost database (can be found in wwwroot/content/data) and put it in the root directory of this node script. Name it ghost.db.
  - Run `node index`
- 
+
 ## Results
 
 The script will generate markdown files in the destination folder (/dest), with the following layout:
@@ -16,9 +16,9 @@ The script will generate markdown files in the destination folder (/dest), with 
 	tags: any tags, delimted by comma's
 	draft: true or false
 	---
-	
+
 	the markdown contents of your post
-	
+
 The file name will be the slug of your post.
 
 ## Remarks
